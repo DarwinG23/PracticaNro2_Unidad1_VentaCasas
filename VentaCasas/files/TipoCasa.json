@@ -1,0 +1,32 @@
+{
+    "controlador.listas.DynamicList": {
+        "header": {
+            "info": {
+                "@class": "modelo.TipoCasa",
+                "id": 1,
+                "nombre": "Unifamiliar",
+                "descripcion": "lote individual y no comparte paredes con otras propiedades."
+            },
+            "next": {
+                "info": {
+                    "@class": "modelo.TipoCasa",
+                    "id": 2,
+                    "nombre": "Apartamento",
+                    "descripcion": "Unidad residencial ubicada dentro de un edificio más grande que puede tener múltiples pisos."
+                },
+                "next": {
+                    "info": {
+                        "@class": "modelo.TipoCasa",
+                        "id": 3,
+                        "nombre": "Chalet",
+                        "descripcion": "Una casa más grande y lujosa, a menudo ubicada en zonas suburbanas o rurales, con amplios terrenos y comodidades adicionales como piscinas, jardines extensos, etc."
+                    }
+                }
+            }
+        },
+        "last": {
+            "@reference": "..\/header\/next\/next"
+        },
+        "length": 3
+    }
+}
