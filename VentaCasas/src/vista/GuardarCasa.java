@@ -54,7 +54,7 @@ public class GuardarCasa extends javax.swing.JFrame {
         tbCasa.setModel(mtc);
         TableRowSorter<ModeloTablaCasa> sorter = new TableRowSorter<>(mtc);
         tbCasa.setRowSorter(sorter);
-        RowFilter<Object, Object> filtro = RowFilter.regexFilter(cedula, 7); 
+        RowFilter<Object, Object> filtro = RowFilter.regexFilter(cedula, 8); 
         sorter.setRowFilter(filtro);
         tbCasa.updateUI();
     }
